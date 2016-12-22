@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="speed_throttler" type="speed_throttle.py" name="speed_throttler" output="screen">
+		<param name="scan_threshold" type="double" value="0.5" />
+		<param name="twist_reducer" type="double" value="0.1" />
+		<remap from="~scan" to="/base_scan"/>
+		<remap from="~reduced_twist" to="/base_controller/command" />
+		<remap from="~input_twist"  to="/joy_command" />
+	</node>
+</launch>
