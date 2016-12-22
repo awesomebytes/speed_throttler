@@ -9,7 +9,7 @@ Given an input Twist topic
 limit its speed by using a LaserScan
 topic.
 
-
+Test it with: rosrun rqt_robot_steering rqt_robot_steering
 """
 
 
